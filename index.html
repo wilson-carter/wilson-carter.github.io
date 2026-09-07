@@ -1,1 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carter Wilson | Business Student</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #111827;
+            border-bottom: 1px solid #334155;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        header {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            color: #38bdf8;
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #cbd5e1;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 25px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            color: #38bdf8;
+        }
+
+        .about {
+            color: #cbd5e1;
+            max-width: 850px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #1e293b;
+            border: 1px solid #334155;
+            padding: 10px 16px;
+            border-radius: 20px;
+            color: #e2e8f0;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+            color: #f8fafc;
+        }
+
+        .project p {
+            color: #cbd5e1;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #111827;
+            color: #94a3b8;
+            border-top: 1px solid #334155;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            header h1 {
+                font-size: 2.8rem;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Carter Wilson</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div>
+            <h1>Carter Wilson</h1>
+            <h2>Business Student | Marketing & Technology</h2>
+            <p>University of Utah</p>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+
+                <p class="about">
+                    I am a business student at the University of Utah with interests in
+                    marketing, management, artificial intelligence, and information systems.
+                    I am interested in how businesses can use technology and data to make
+                    better decisions and improve their strategies. Through my classes, I
+                    have been developing skills in Microsoft Excel, data analytics, AI
+                    prompting, and business problem solving. I am especially interested in
+                    learning how AI can be used to analyze information, improve business
+                    processes, and support marketing decisions. I also want to continue
+                    developing my technical skills and gaining experience with different
+                    business technologies. My goal is to combine my business knowledge
+                    with technology to solve real-world problems and create useful solutions
+                    for organizations.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+
+                <div class="skills">
+                    <span class="skill">Microsoft Excel</span>
+                    <span class="skill">Data Analytics</span>
+                    <span class="skill">AI Prompt Engineering</span>
+                    <span class="skill">Business Analysis</span>
+                    <span class="skill">Marketing</span>
+                    <span class="skill">Management</span>
+                    <span class="skill">Microsoft Office</span>
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">GitHub</span>
+                    <span class="skill">Communication</span>
+                    <span class="skill">Problem Solving</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+
+                <div class="projects">
+
+                    <div class="project">
+                        <h3>Social Media Analytics</h3>
+                        <p>
+                            Analyzed Doritos and Pringles social media performance using
+                            Excel, correlation, regression, and data visualization.
+                        </p>
+                    </div>
+
+                    <div class="project">
+                        <h3>AI Business Analysis</h3>
+                        <p>
+                            Used iterative ChatGPT prompting to analyze business data,
+                            evaluate assumptions, and develop business recommendations.
+                        </p>
+                    </div>
+
+                    <div class="project">
+                        <h3>Data Visualization</h3>
+                        <p>
+                            Created Excel charts and visualizations to communicate business
+                            performance and identify important patterns in data.
+                        </p>
+                    </div>
+
+                    <div class="project">
+                        <h3>GitHub Portfolio</h3>
+                        <p>
+                            Built a professional GitHub Pages portfolio to demonstrate
+                            business, technology, and analytical skills.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <div class="container">
+                <h2>Resume</h2>
+                <p class="about">
+                    Resume coming soon.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container contact">
+                <h2>Contact</h2>
+
+                <p>
+                    University of Utah Student
+                </p>
+
+                <p>
+                    GitHub:
+                    <a href="https://github.com/wilson-carter">
+                        github.com/wilson-carter
+                    </a>
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Carter Wilson | University of Utah
+    </footer>
+
+</body>
+</html>
